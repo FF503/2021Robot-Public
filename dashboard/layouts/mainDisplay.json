@@ -1,0 +1,287 @@
+{
+  "tabPane": [
+    {
+      "title": "Main Display",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "tiles": {
+          "1,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Number Bar",
+              "_source0": "network_table:///SmartDashboard/shoote_current",
+              "_title": "Shooter Curr",
+              "Range/Min": 0.0,
+              "Range/Max": 100.0,
+              "Range/Center": 0.0,
+              "Visuals/Num tick marks": 5,
+              "Visuals/Show text": true
+            }
+          },
+          "5,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Simple Dial",
+              "_source0": "network_table:///SmartDashboard/Pigeon Heading",
+              "_title": "Heading",
+              "Range/Min": 0.0,
+              "Range/Max": 360.0,
+              "Visuals/Show value": true
+            }
+          },
+          "0,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Number Slider",
+              "_source0": "network_table:///SmartDashboard/shooter_setpoint",
+              "_title": "Shooter Setpoint",
+              "Slider Settings/Min": 0.0,
+              "Slider Settings/Max": 5200.0,
+              "Slider Settings/Block increment": 0.0
+            }
+          },
+          "3,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Number Bar",
+              "_source0": "network_table:///SmartDashboard/spindexer current draw",
+              "_title": "Spindexer Curr",
+              "Range/Min": 0.0,
+              "Range/Max": 100.0,
+              "Range/Center": 0.0,
+              "Visuals/Num tick marks": 5,
+              "Visuals/Show text": true
+            }
+          },
+          "0,1": {
+            "size": [
+              2,
+              2
+            ],
+            "content": {
+              "_type": "Graph",
+              "_source0": "network_table:///SmartDashboard/shooter_speed_flywheel",
+              "_title": "Shooter Speed",
+              "Graph/Visible time": 10.0,
+              "Y-axis/Automatic bounds": false,
+              "Y-axis/Upper bound": 5200.0,
+              "Y-axis/Lower bound": 0.0,
+              "Visible data/SmartDashboard/shooter_speed_flywheel": true
+            }
+          },
+          "6,0": {
+            "size": [
+              4,
+              4
+            ],
+            "content": {
+              "_type": "Camera Stream",
+              "_source0": "camera_server://limelight",
+              "_title": "Limelight",
+              "Crosshair/Show crosshair": true,
+              "Crosshair/Crosshair color": "#00FF00FF",
+              "Controls/Show controls": false,
+              "Controls/Rotation": "NONE",
+              "compression": -1.0,
+              "fps": -1,
+              "imageWidth": -1,
+              "imageHeight": -1
+            }
+          },
+          "0,3": {
+            "size": [
+              3,
+              1
+            ],
+            "content": {
+              "_type": "Number Bar",
+              "_source0": "network_table:///SmartDashboard/Left climber current",
+              "_title": "L Climber Curr",
+              "Range/Min": 0.0,
+              "Range/Max": 100.0,
+              "Range/Center": 0.0,
+              "Visuals/Num tick marks": 5,
+              "Visuals/Show text": true
+            }
+          },
+          "3,3": {
+            "size": [
+              3,
+              1
+            ],
+            "content": {
+              "_type": "Number Bar",
+              "_source0": "network_table:///SmartDashboard/Right climber current",
+              "_title": "R Climber Curr",
+              "Range/Min": 0.0,
+              "Range/Max": 100.0,
+              "Range/Center": 0.0,
+              "Visuals/Num tick marks": 5,
+              "Visuals/Show text": true
+            }
+          },
+          "4,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Number Bar",
+              "_source0": "network_table:///SmartDashboard/Intake Current",
+              "_title": "Intake Curr",
+              "Range/Min": 0.0,
+              "Range/Max": 100.0,
+              "Range/Center": 0.0,
+              "Visuals/Num tick marks": 5,
+              "Visuals/Show text": true
+            }
+          },
+          "2,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/shooter state",
+              "_title": "Shooter State"
+            }
+          },
+          "4,1": {
+            "size": [
+              2,
+              2
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/Homed",
+              "_title": "HOME",
+              "Colors/Color when true": "#00FF00FF",
+              "Colors/Color when false": "#FF0000FF"
+            }
+          },
+          "2,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/Shooter Ready",
+              "_title": "FIRE",
+              "Colors/Color when true": "#00FF00FF",
+              "Colors/Color when false": "#FF0000FF"
+            }
+          },
+          "2,2": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/Vision Ready",
+              "_title": "SCOPE",
+              "Colors/Color when true": "#00FF00FF",
+              "Colors/Color when false": "#FF0000FF"
+            }
+          },
+          "3,1": {
+            "size": [
+              1,
+              2
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/Hood State",
+              "_title": "Trench Safe",
+              "Colors/Color when true": "#00FF00FF",
+              "Colors/Color when false": "#FF0000FF"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Autonomous",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "tiles": {
+          "2,2": {
+            "size": [
+              3,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///FFDashboard/AutonSelect/autonName",
+              "_title": "Input Autonomous"
+            }
+          },
+          "5,2": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Toggle Button",
+              "_source0": "network_table:///FFDashboard/AutonSelect/autonGo",
+              "_title": "Deploy"
+            }
+          },
+          "6,2": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///FFDashboard/AutonSelect/Robot Selected Auton",
+              "_title": "Selected Autonomous"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Debug",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "tiles": {}
+      }
+    }
+  ],
+  "windowGeometry": {
+    "x": -7.199999809265137,
+    "y": -7.199999809265137,
+    "width": 1550.4000244140625,
+    "height": 838.4000244140625
+  }
+}

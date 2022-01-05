@@ -1,0 +1,17 @@
+{
+    "name": "PracticeFrontLeft",
+    "driveMotorID": 3,
+    "turnMotorID": 5,
+    "P": 4.16,
+    "I": 0.0,
+    "D": 84.0,
+    "F": 1.024,
+    "startingEncoderClick": 3428,
+    "cruiseVelocity": 1048,
+    "cruiseAccel": 16440,
+    "turnCountsDecreasing": true,
+    "DriveInverted": true,
+    "DriveEncoderInverted": false,
+    "TurnMotorInverted": false,
+    "TurnEncoderInverted": false
+}

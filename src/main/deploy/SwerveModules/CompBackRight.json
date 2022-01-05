@@ -1,0 +1,17 @@
+{
+    "name": "CompBackRight",
+    "driveMotorID": 1,
+    "turnMotorID": 5,
+    "P": 4.00,
+    "I": 0.0,
+    "D": 70.0,
+    "F": 1.01,
+    "startingEncoderClick": 2137,
+    "cruiseVelocity": 800,
+    "cruiseAccel": 8000,
+    "turnCountsDecreasing": false,
+    "DriveInverted": false,
+    "DriveEncoderInverted": false,
+    "TurnMotorInverted": true,
+    "TurnEncoderInverted": false
+}

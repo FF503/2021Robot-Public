@@ -1,0 +1,17 @@
+{
+    "name": "AndyBackRight",
+    "driveMotorID": 3,
+    "turnMotorID": 7,
+    "P": 20.0,
+    "I": 0.0,
+    "D": 2.2,
+    "F": 6.577,
+    "startingEncoderClick": 748,
+    "cruiseVelocity": 300,
+    "cruiseAccel": 900,
+    "turnCountsDecreasing": true,
+    "DriveInverted": false,
+    "DriveEncoderInverted": true,
+    "TurnMotorInverted": false,
+    "TurnEncoderInverted": false
+}

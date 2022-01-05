@@ -1,0 +1,59 @@
+// Copyright (c) FIRST and other WPILib contributors.
+// Open Source Software; you can modify and/or share it under the terms of
+// the WPILib BSD license file in the root directory of this project.
+
+package org.frogforce503.robot2021.commands;
+
+import org.frogforce503.robot2021.subsystems.intake.Intake;
+
+import edu.wpi.first.wpilibj2.command.CommandBase;
+
+public class ToggleIntakeCommand extends CommandBase {
+
+    /**
+     * Creates a new IntakeStateCommand.
+     */
+    public ToggleIntakeCommand() {
+        // Use addRequirements() here to declare subsystem dependencies.
+        // addRequirements(Intake.getInstance());
+    }
+
+    // Called when the command is initially scheduled.
+    @Override
+    public void initialize() {
+        // if (Robot.bot.hasMotorizedHood()) {
+        if (Intake.getInstance().getState() != Intake.IntakeControlState.SHOOTING) {
+            if (Intake.getInstance().getState() != Intake.IntakeControlState.INTAKING) {
+                Intake.getInstance().conformToState(Intake.IntakeControlState.INTAKING);
+            } else {
+                Intake.getInstance().conformToState(Intake.IntakeControlState.OUT);
+            }
+        }
+        // } else {
+        //     if (LegacyIntake.getInstance().getState() != LegacyIntake.IntakeControlState.SHOOTING) {
+        //         if (LegacyIntake.getInstance().getState() != LegacyIntake.IntakeControlState.INTAKING) {
+        //             LegacyIntake.getInstance().conformToState(LegacyIntake.IntakeControlState.INTAKING);
+        //         } else {
+        //             LegacyIntake.getInstance().conformToState(LegacyIntake.IntakeControlState.OUT);
+        //         }
+        //     }
+        // }
+    }
+
+    // Called every time the scheduler runs while the command is scheduled.
+    @Override
+    public void execute() {
+
+    }
+
+    // Called once the command ends or is interrupted.
+    @Override
+    public void end(boolean interrupted) {
+    }
+
+    // Returns true when the command should end.
+    @Override
+    public boolean isFinished() {
+        return true;
+    }
+}
